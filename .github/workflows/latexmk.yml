@@ -1,7 +1,9 @@
 ---
-name: CI
+name: Generate PDF Document
+# This workflow generates a PDF document using latexmk and uploads it as an artifact.
+# It is triggered on every push to the repository.
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   build-test:
@@ -18,7 +20,7 @@ jobs:
           options: -shell-escape
       
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: PrepTable-PDF
-          path: PrepTable.pdf
+          path: *.pdf
