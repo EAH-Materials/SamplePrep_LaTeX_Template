@@ -14,5 +14,5 @@ jobs:
         uses: hspaans/latexmk-action@v2.0.0
         with:
           format: pdf
-          filename: SamplePrepTable.tex
+          filename: PrepTable.tex
           options: -shell-escape
