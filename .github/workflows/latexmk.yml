@@ -16,3 +16,9 @@ jobs:
           format: pdf
           filename: PrepTable.tex
           options: -shell-escape
+      
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: PrepTable-PDF
+          path: PrepTable.pdf
