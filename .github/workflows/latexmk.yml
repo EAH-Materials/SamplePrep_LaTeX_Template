@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate PDF document
-        uses: hspaans/latexmk-action@v2.0.0
+        uses: hspaans/latexmk-action@v2.0.1
         with:
           format: pdf
           filename: PrepTable.tex
