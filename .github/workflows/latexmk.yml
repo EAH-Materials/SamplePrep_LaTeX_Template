@@ -20,7 +20,7 @@ jobs:
           options: -shell-escape
       
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: PrepTable-PDF
           path: PrepTable.pdf
